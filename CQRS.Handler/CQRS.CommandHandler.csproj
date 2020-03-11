@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRS.Command\CQRS.Command.csproj" />
+    <ProjectReference Include="..\CQRS.Common\CQRS.Common.csproj" />
+    <ProjectReference Include="..\CQRS.DAL\CQRS.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

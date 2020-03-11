@@ -1,0 +1,4 @@
+E:\MyProject\CQRS\CQRS.DAL\bin\Debug\netcoreapp3.1\CQRS.DAL.deps.json
+E:\MyProject\CQRS\CQRS.DAL\bin\Debug\netcoreapp3.1\CQRS.DAL.dll
+E:\MyProject\CQRS\CQRS.DAL\obj\Debug\netcoreapp3.1\CQRS.DAL.AssemblyInfoInputs.cache
+E:\MyProject\CQRS\CQRS.DAL\obj\Debug\netcoreapp3.1\CQRS.DAL.AssemblyInfo.cs

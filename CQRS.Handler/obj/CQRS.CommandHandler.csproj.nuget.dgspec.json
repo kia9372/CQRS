@@ -1,0 +1,313 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\MyProject\\CQRS\\CQRS.Handler\\CQRS.CommandHandler.csproj": {}
+  },
+  "projects": {
+    "E:\\MyProject\\CQRS\\CQRS.Command\\CQRS.Command.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\MyProject\\CQRS\\CQRS.Command\\CQRS.Command.csproj",
+        "projectName": "CQRS.Command",
+        "projectPath": "E:\\MyProject\\CQRS\\CQRS.Command\\CQRS.Command.csproj",
+        "packagesPath": "C:\\Users\\Kianoush\\.nuget\\packages\\",
+        "outputPath": "E:\\MyProject\\CQRS\\CQRS.Command\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kianoush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj": {
+                "projectPath": "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj",
+        "projectName": "CQRS.Common",
+        "projectPath": "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj",
+        "packagesPath": "C:\\Users\\Kianoush\\.nuget\\packages\\",
+        "outputPath": "E:\\MyProject\\CQRS\\CQRS.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kianoush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\MyProject\\CQRS\\CQRS.DAL\\CQRS.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\MyProject\\CQRS\\CQRS.DAL\\CQRS.DAL.csproj",
+        "projectName": "CQRS.DAL",
+        "projectPath": "E:\\MyProject\\CQRS\\CQRS.DAL\\CQRS.DAL.csproj",
+        "packagesPath": "C:\\Users\\Kianoush\\.nuget\\packages\\",
+        "outputPath": "E:\\MyProject\\CQRS\\CQRS.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kianoush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\MyProject\\CQRS\\CQRS.Entity\\CQRS.Entity.csproj": {
+                "projectPath": "E:\\MyProject\\CQRS\\CQRS.Entity\\CQRS.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\MyProject\\CQRS\\CQRS.Entity\\CQRS.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\MyProject\\CQRS\\CQRS.Entity\\CQRS.Entity.csproj",
+        "projectName": "CQRS.Entity",
+        "projectPath": "E:\\MyProject\\CQRS\\CQRS.Entity\\CQRS.Entity.csproj",
+        "packagesPath": "C:\\Users\\Kianoush\\.nuget\\packages\\",
+        "outputPath": "E:\\MyProject\\CQRS\\CQRS.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kianoush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\MyProject\\CQRS\\CQRS.Handler\\CQRS.CommandHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\MyProject\\CQRS\\CQRS.Handler\\CQRS.CommandHandler.csproj",
+        "projectName": "CQRS.CommandHandler",
+        "projectPath": "E:\\MyProject\\CQRS\\CQRS.Handler\\CQRS.CommandHandler.csproj",
+        "packagesPath": "C:\\Users\\Kianoush\\.nuget\\packages\\",
+        "outputPath": "E:\\MyProject\\CQRS\\CQRS.Handler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kianoush\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\MyProject\\CQRS\\CQRS.Command\\CQRS.Command.csproj": {
+                "projectPath": "E:\\MyProject\\CQRS\\CQRS.Command\\CQRS.Command.csproj"
+              },
+              "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj": {
+                "projectPath": "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj"
+              },
+              "E:\\MyProject\\CQRS\\CQRS.DAL\\CQRS.DAL.csproj": {
+                "projectPath": "E:\\MyProject\\CQRS\\CQRS.DAL\\CQRS.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
