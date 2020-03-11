@@ -13,27 +13,29 @@ namespace CQRS
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment env)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+        .SetBasePath(env.ContentRootPath)
+        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+        .AddEnvironmentVariables();
+            this.Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
+        public ILifetimeScope AutofacContainer { get; private set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public IServiceProvider ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            var builder = new ContainerBuilder();
-            builder.RegisterAssemblyTypes(Assembly.GetEntryAssembly())
-                    .AsImplementedInterfaces();
-            builder.Populate(services);
-            builder.AddDispatchers();
-                    
-            var conteiner = builder.Build();
-
-            return new AutofacServiceProvider(conteiner);
         }
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            builder.AddDispatchers();
+        }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -46,6 +48,7 @@ namespace CQRS
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            this.AutofacContainer = app.ApplicationServices.GetAutofacRoot();
 
             app.UseAuthorization();
 

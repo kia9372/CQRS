@@ -21,10 +21,10 @@ namespace CQRS.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async void Get()
         {
-            dispatchers.SendAsync(new UserCommand(1, "kianoush", "dortaj", "kiadr9372@gmail.com"));
-            return Ok();
+           await dispatchers.SendAsync(new UserCommand(1, "kianoush", "dortaj", "kiadr9372@gmail.com"));
+            
         }
     }
 }
