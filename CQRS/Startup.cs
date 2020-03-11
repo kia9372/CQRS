@@ -1,10 +1,15 @@
 using System;
+using System.Linq;
 using System.Reflection;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using CQRS.Command.UserCommands;
 using CQRS.Common.Extentions;
+using CQRS.Common.Handlers;
+using CQRS.DAL.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,12 +35,21 @@ namespace CQRS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContextPool<CQRSContext>(option=>option.UseSqlServer(@"Server=.; initial catalog=CQRS;integrated security=true"));
+            var handlers = typeof(UserCommand).Assembly.GetTypes()
+                .Where(t => t.GetInterfaces()
+                .Any(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(ICommandHandler<>))
+            );
+
+            foreach (var handler in handlers)
+            {
+                services.AddScoped(handler.GetInterfaces().First(i => i.IsGenericType && i.GetGenericTypeDefinition() == typeof(ICommandHandler<>)), handler);
+            }
         }
         public void ConfigureContainer(ContainerBuilder builder)
         {
             builder.AddDispatchers();
         }
-
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -32,6 +32,9 @@
             "projectReferences": {
               "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj": {
                 "projectPath": "E:\\MyProject\\CQRS\\CQRS.Common\\CQRS.Common.csproj"
+              },
+              "E:\\MyProject\\CQRS\\CQRS.DAL\\CQRS.DAL.csproj": {
+                "projectPath": "E:\\MyProject\\CQRS\\CQRS.DAL\\CQRS.DAL.csproj"
               }
             }
           }
@@ -166,6 +169,16 @@
         "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.2, )"
             }

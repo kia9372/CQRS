@@ -2,7 +2,11 @@ E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.Command.deps.json
 E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.Command.dll
 E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.Command.pdb
 E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.Common.dll
+E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.DAL.dll
+E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.Entity.dll
 E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.Common.pdb
+E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.DAL.pdb
+E:\MyProject\CQRS\CQRS.Command\bin\Debug\netcoreapp3.1\CQRS.Entity.pdb
 E:\MyProject\CQRS\CQRS.Command\obj\Debug\netcoreapp3.1\CQRS.Command.csprojAssemblyReference.cache
 E:\MyProject\CQRS\CQRS.Command\obj\Debug\netcoreapp3.1\CQRS.Command.AssemblyInfoInputs.cache
 E:\MyProject\CQRS\CQRS.Command\obj\Debug\netcoreapp3.1\CQRS.Command.AssemblyInfo.cs

@@ -24,7 +24,6 @@ namespace CQRS.Controllers
         public async void Get()
         {
            await dispatchers.SendAsync(new UserCommand(1, "kianoush", "dortaj", "kiadr9372@gmail.com"));
-            
         }
     }
 }

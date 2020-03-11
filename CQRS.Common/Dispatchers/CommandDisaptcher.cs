@@ -1,20 +1,22 @@
 ﻿using Autofac;
 using CQRS.Common.Handlers;
+using System;
 using System.Threading.Tasks;
 
 namespace CQRS.Common.Dispatchers
 {
     public class CommandDisaptcher : ICommandDispatcher
     {
-        private readonly IComponentContext context;
+        private IServiceProvider _serviceProvider;
 
-        public CommandDisaptcher(IComponentContext context)
+        public CommandDisaptcher(IServiceProvider serviceProvider)
         {
-            this.context = context;
+            this._serviceProvider = serviceProvider;
         }
         public async Task SendAsync<T>(T command) where T : ICommand
         {
-            await context.Resolve<ICommandHandler<T>>().HandlersAsync(command);
+            var service = this._serviceProvider.GetService(typeof(ICommandHandler<T>)) as ICommandHandler<T>;
+            await service.HandlersAsync(command);
         }
     }
 }

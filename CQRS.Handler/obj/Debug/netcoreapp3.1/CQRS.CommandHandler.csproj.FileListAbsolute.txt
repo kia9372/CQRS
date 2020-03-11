@@ -1,0 +1,17 @@
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.CommandHandler.deps.json
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.CommandHandler.dll
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.CommandHandler.pdb
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.Command.dll
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.Common.dll
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.DAL.dll
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.Entity.dll
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.Command.pdb
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.Common.pdb
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.DAL.pdb
+E:\MyProject\CQRS\CQRS.Handler\bin\Debug\netcoreapp3.1\CQRS.Entity.pdb
+E:\MyProject\CQRS\CQRS.Handler\obj\Debug\netcoreapp3.1\CQRS.CommandHandler.csprojAssemblyReference.cache
+E:\MyProject\CQRS\CQRS.Handler\obj\Debug\netcoreapp3.1\CQRS.CommandHandler.AssemblyInfoInputs.cache
+E:\MyProject\CQRS\CQRS.Handler\obj\Debug\netcoreapp3.1\CQRS.CommandHandler.AssemblyInfo.cs
+E:\MyProject\CQRS\CQRS.Handler\obj\Debug\netcoreapp3.1\CQRS.CommandHandler.csproj.CopyComplete
+E:\MyProject\CQRS\CQRS.Handler\obj\Debug\netcoreapp3.1\CQRS.CommandHandler.dll
+E:\MyProject\CQRS\CQRS.Handler\obj\Debug\netcoreapp3.1\CQRS.CommandHandler.pdb
